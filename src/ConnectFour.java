@@ -136,7 +136,7 @@ public class ConnectFour extends JComponent {
 				if(board[Row][j] == PlayerTurn){ 		// looks for a piece to flip between
 					inArow++;
 				}
-				else if(board[Row][j] == EMPTY){ 		//if an empty space is found none are flipped
+				else if(board[Row][j] != PlayerTurn){ 		//if an empty space is found none are flipped
 					break south;
 				}
 				if(inArow == 4){
@@ -154,7 +154,7 @@ public class ConnectFour extends JComponent {
 				if(board[Row][j] == PlayerTurn){ 		// looks for a piece to flip between
 					inArow++;
 				}
-				else if(board[Row][j] == EMPTY){		//if an empty space is found none are flipped
+				else if(board[Row][j] != PlayerTurn){		//if an empty space is found none are flipped
 					break north;
 				}
 				if(inArow == 4){
@@ -176,7 +176,7 @@ public class ConnectFour extends JComponent {
 				if(board[i][j] == PlayerTurn){ 		// looks for a piece to flip between
 					inArow++;
 				}
-				else if(board[i][j] == EMPTY){		//if an empty space is found none are flipped
+				else if(board[i][j] != PlayerTurn){		//if an empty space is found none are flipped
 					break northwest;
 				}
 				i += WEST;																//Increments the row
@@ -199,7 +199,7 @@ public class ConnectFour extends JComponent {
 				if(board[i][j] == PlayerTurn){ 		// looks for a piece to flip between
 					inArow++;
 				}
-				else if(board[i][j] == EMPTY){		//if an empty space is found none are flipped
+				else if(board[i][j] != PlayerTurn){		//if an empty space is found none are flipped
 					break northeast;
 				}
 				i += EAST;																//Increments the row
@@ -222,7 +222,7 @@ public class ConnectFour extends JComponent {
 				if(board[i][j] == PlayerTurn){ 		// looks for a piece to flip between
 					inArow++;
 				}
-				else if(board[i][j] == EMPTY){		//if an empty space is found none are flipped
+				else if(board[i][j] != PlayerTurn){		//if an empty space is found none are flipped
 					break southwest;
 				}
 				i += WEST;																//Increments the row
@@ -245,7 +245,7 @@ public class ConnectFour extends JComponent {
 				if(board[i][j] == PlayerTurn){ 		// looks for a piece to flip between
 					inArow++;
 				}
-				else if(board[i][j] == EMPTY){		//if an empty space is found none are flipped
+				else if(board[i][j] != PlayerTurn){		//if an empty space is found none are flipped
 					break southeast;
 				}
 				i += EAST;																//Increments the row
@@ -264,7 +264,7 @@ public class ConnectFour extends JComponent {
 				if(board[i][Column] == PlayerTurn){ 		// looks for a piece to flip between
 					inArow++;
 				}
-				else if(board[i][Column] == EMPTY){		//if an empty space is found none are flipped
+				else if(board[i][Column] != PlayerTurn){		//if an empty space is found none are flipped
 					break west;
 				}
 				if(inArow == 4){
@@ -282,7 +282,7 @@ public class ConnectFour extends JComponent {
 				if(board[i][Column] == PlayerTurn){ 		// looks for a piece to flip between
 					inArow++;
 				}
-				else if(board[i][Column] == EMPTY){		//if an empty space is found none are flipped
+				else if(board[i][Column] != PlayerTurn){		//if an empty space is found none are flipped
 					break east;
 				}
 				if(inArow == 4){
